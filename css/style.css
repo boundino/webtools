@@ -1,0 +1,60 @@
+:root {
+    /* color */
+    --gray: #f5f5f5;
+    --blue: #0072D0;
+    --darkgray: #666;
+    --red: #D62828;
+    --padding-input: 0.4rem;
+    --margin-input: 0.4rem;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-family: 'Encode Sans Expanded', sans-serif;
+    font-size: 18px;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+p { margin: 0; }
+a { font-size: 0.6em; text-decoration: none; }
+a:visited{ color: black; }
+.link:hover { color: gray; }
+
+input[type=text], button {
+    outline: none;
+    color: inherit;
+    font-size: inherit;
+    border: 0.05rem solid var(--darkgray);
+    border-radius: 0.2rem;
+    font-family: inherit;
+    font-weight: inherit;
+    padding: calc(var(--padding-input) - 0.1rem) var(--padding-input);
+    margin: var(--margin-input) 0;
+    display: inline;
+    vertical-align: middle;    
+}
+
+input[type=text] {
+    width: 40%;
+    ::placeholder {
+        color: black;
+    }
+}
+
+button {
+    width: 2.5rem;
+    background-color: var(--gray);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ddd;
+}
+
